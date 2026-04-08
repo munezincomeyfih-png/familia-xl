@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Familia Xoralixo</title>
+</head>
+
+<body>
+    <header style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 10rem;">
+        <h1>Familia Xoralixo</h1>
+        <!-- <div>            
+            <input type="search" id="campo-busca" placeholder="Busque por um gênero">
+        </div> -->
+    </header>
+
+    <button id="theme-toggle">
+        <span class="moon-icon">🌙</span>
+        <span class="sun-icon">🌞</span>
+    </button>
+
+    <main>
+        <section class="server-info-section">
+            <div class="server-banner-card">
+                <div class="server-banner-content">
+                    <div class="server-logo">
+                        <img src="img\PICAPAL.jpg" alt="Logo do Servidor">
+                    </div>
+                    <div class="server-text">
+                        <h2>Família Xoralixo</h2>
+                        <p>Familia mais lindo do mundooooo afsss Juro!!</p>
+                        <div class="server-stats">
+                            <span class="stat"><i class="dot online"></i> 11 Membros</span>
+                        </div>
+                    </div>
+                    <div class="server-action">
+                        <a href="https://discord.gg/GztyV7RUHQ" target="_blank" class="join-button">Entrar no Servidor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="genre-section">
+            <div class="cards-container">
+                <!-- Os cards de gênero serão inseridos aqui via JavaScript -->
+            </div>
+            <p id="no-results-message" style="display: none; text-align: center;">Nenhum gênero encontrado.</p>
+        </section>
+
+        <section class="featured-games">
+            <h3>Criadores da Familia</h3>
+            <div class="games-container">
+                <!-- Perfil 1 -->
+                <div class="profile-card">
+                    <div class="avatar-container">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="profile-info">
+                        <span class="username">SMK<span class="discriminator">fly1z1</span></span>
+                        <p class="description">Criadores da familia 🚀</p>
+                        <div class="profile-badges">
+                            <span class="badge">Staff</span>
+                            <span class="badge">Dorminhoco</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 2 -->
+                <div class="profile-card">
+                    <div class="avatar-container">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="profile-info">
+                        <span class="username">Russia<span class="discriminator">zock444</span></span>
+                        <p class="description">Criadores da Familia🎨</p>
+                        <div class="profile-badges">
+                            <span class="badge">Staff</span>
+                            <span class="badge">Capeta em pessoa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 3 -->
+                <div class="profile-card">
+                    <div class="avatar-container">
+                        <div class="status-indicator idle"></div>
+                    </div>
+                    <div class="profile-info">
+                        <span class="username">Italia<span class="discriminator">italiaxl_</span></span>
+                        <p class="description">Criadores da Familia🎮</p>
+                        <div class="profile-badges">
+                            <span class="badge">Staff</span>
+                            <span class="badge">Imã de xereca 0-0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfil 4 -->
+                <div class="profile-card">
+                    <div class="avatar-container">
+                        <div class="status-indicator dnd"></div>
+                    </div>
+                    <div class="profile-info">
+                        <span class="username">Miss<span class="discriminator">caosskkj</span></span>
+                        <p class="description">Criadores da Familia🤝</p>
+                        <div class="profile-badges">
+                            <span class="badge">Staff</span>
+                            <span class="badge">Amante</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="https://discord.gg/GztyV7RUHQ" target="_blank">Discord</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="app.js"></script>
+    <!-- <script src="./JS/tema.js"></script> -->
+    <script src="busca.js"></script>
+    <script src="padrao.js"></script>
+</body>
+</html>

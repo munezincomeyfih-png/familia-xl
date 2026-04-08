@@ -1,0 +1,397 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: oklch(63.7% 0.237 25.331);
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px oklch(63.7% 0.237 25.331);
+}
+
+/*input#campo-busca {
+    width: 400px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, background-color 0.3s;
+}*/
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#theme-toggle .sun-icon {
+    display: none;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.featured-games {
+    text-align: center;
+    padding: 20px;
+}
+
+.games-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Server Banner Card */
+.server-info-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.05) 0%, transparent 100%);
+}
+
+.server-banner-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.25);
+    border: 2px solid rgba(255, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.server-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.server-logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25%;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.server-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.server-text h2 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.server-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.server-stats {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot.online { 
+    background-color: #23a55a; 
+    animation: pulse-green 2s infinite;
+}
+.dot.total { background-color: #b5bac1; }
+
+@keyframes pulse-green {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(35, 165, 90, 0.7); }
+    70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(35, 165, 90, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(35, 165, 90, 0); }
+}
+
+.join-button {
+    background: linear-gradient(135deg, #5865F2 0%, #4752c4 100%);
+    color: white;
+    padding: 18px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.join-button:hover {
+    background: #5865F2;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+/* Profile Cards (Estilo Discord) */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+.avatar-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.status-indicator.online { background-color: #23a55a; }
+.status-indicator.idle { background-color: #f0b232; }
+.status-indicator.dnd { background-color: #f23f43; }
+
+.username {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.discriminator {
+    color: #5c5e66;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.description {
+    font-size: 0.85rem;
+    margin: 8px 0;
+    color: #4f5660;
+}
+
+.badge {
+    background-color: #e3e5e8;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 2px;
+}
+
+/*
+.game-link:hover {
+    transform: scale(1.1);
+    color: #ef4444;
+}
+
+.game-link img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 27px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links a:hover {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a:hover {
+    color: #ef4444;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Tema Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px oklch(27.938% 0.17822 269.426);
+}
+
+body.dark-mode .card {
+    background-color: #121e61;
+    border-color: #444;
+}
+
+body.dark-mode .profile-card {
+    background-color: #1e1f22;
+    border-color: #2b2d31;
+    color: #dbdee1;
+}
+
+body.dark-mode .status-indicator { border-color: #1e1f22; }
+body.dark-mode .discriminator { color: #b5bac1; }
+body.dark-mode .description { color: #b5bac1; }
+body.dark-mode .badge { background-color: #313338; color: #dbdee1; }
+
+body.dark-mode .server-banner-card {
+    background-color: #1e1f22;
+    border-color: rgba(255, 0, 0, 0.3);
+    color: #dbdee1;
+    box-shadow: 0 15px 50px oklch(27.938% 0.17822 269.426);
+}
+
+body.dark-mode .server-text h2 { color: #fff; }
+
+body.dark-mode .dot.total { background-color: #4f545c; }
+
+body.dark-mode .card:hover {
+    box-shadow: 0 8px 20px oklch(27.938% 0.17822 269.426);
+}
+
+body.dark-mode a {
+    color: oklch(63.7% 0.237 25.331);
+}
+
+body.dark-mode .game-link {
+    color: #e0e0e0;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-mode #theme-toggle .moon-icon {
+    display: none;
+}
+
+body.dark-mode #theme-toggle .sun-icon {
+    display: block;
+}
+
+body.dark-mode input#campo-busca {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+/* Estilização básica do rodapé para o posicionamento */
+footer {
+    position: relative;
+    height: 20px;
+    background-color: #333333;
+    overflow: hidden;
+    width: 96%;
+}
