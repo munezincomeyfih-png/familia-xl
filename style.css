@@ -97,12 +97,14 @@ header {
 .server-info-section {
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.05) 0%, transparent 100%);
+    padding: 40px 20px;
+    background: transparent;
 }
 
 .server-banner-card {
-    background-color: #ffffff;
+    /* Fundo semi-transparente para ver a imagem familia-xl atrás */
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(10px); /* Aumentado para melhor legibilidade */
     border-radius: 16px;
     padding: 40px;
     width: 100%;
@@ -197,7 +199,8 @@ header {
 
 /* Profile Cards (Estilo Discord) */
 .profile-card {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
     width: 250px;
@@ -335,7 +338,8 @@ body.dark-mode .card {
 }
 
 body.dark-mode .profile-card {
-    background-color: #1e1f22;
+    background-color: rgba(30, 31, 34, 0.4);
+    backdrop-filter: blur(10px);
     border-color: #2b2d31;
     color: #dbdee1;
 }
@@ -346,7 +350,8 @@ body.dark-mode .description { color: #b5bac1; }
 body.dark-mode .badge { background-color: #313338; color: #dbdee1; }
 
 body.dark-mode .server-banner-card {
-    background-color: #1e1f22;
+    background-color: rgba(30, 31, 34, 0.4);
+    backdrop-filter: blur(10px);
     border-color: rgba(255, 0, 0, 0.3);
     color: #dbdee1;
     box-shadow: 0 15px 50px oklch(27.938% 0.17822 269.426);
