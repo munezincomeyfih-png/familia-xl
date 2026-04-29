@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Familia Xoralixo</title>
+    <style>
+        body {
+            background-image: url('img/familia-xl.png'); /* Certifique-se de que a extensão seja .jpg, .png ou .webp */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
 <body>
-    <header style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 10rem;">
-        <h1>Familia Xoralixo</h1>
-        <!-- <div>            
-            <input type="search" id="campo-busca" placeholder="Busque por um gênero">
-        </div> -->
-    </header>
-
     <button id="theme-toggle">
         <span class="moon-icon">🌙</span>
         <span class="sun-icon">🌞</span>
@@ -116,13 +118,13 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <ul class="footer-links">
             <li>
                 <a href="https://discord.gg/GztyV7RUHQ" target="_blank">Discord</a>
             </li>
         </ul>
-    </footer>
+    </footer> -->
 
     <script src="app.js"></script>
     <!-- <script src="./JS/tema.js"></script> -->
